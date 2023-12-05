@@ -1,0 +1,38 @@
+<?php
+$userid=$_GET['uid'];
+if(isset($_POST['user']))
+{
+    require_once 'credentials.php';
+    
+    $username = $_POST['username'];
+    $user = $_POST['user'];
+
+    $connection = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
+    
+    // Attempt to connect. Return an error if not.
+    if (!$connection)
+    {
+        die("Connection failed: " . $mysqli_connect_error);
+    }
+
+    $query = "DELETE FROM users WHERE uid = '$userid' ";
+    echo $query;
+    $result = mysqli_query($connection,$query);
+
+    
+    // no data returned, we just test for true(success)/false(failure):
+    if ($result)
+    {
+        // navigate back to the view post page:
+        header('Location: http://localhost/noticeboard/view_post.php');
+    }
+    else
+    {    
+        // show an unsuccessful signup message:
+        $message = "Delete post failed, please try again<br>";
+    }
+    
+    echo $message;
+    mysqli_close($connection);
+}
+?>

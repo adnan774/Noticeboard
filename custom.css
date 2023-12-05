@@ -1,0 +1,147 @@
+body {
+    font-family: "Arial", "Helvetica", sans-serif;
+    color: white;
+    background-color: cadetblue;
+    --color-primary: #009579;
+    --color-primary-dark: #007f67;
+    --color-secondary: #252c6a;
+    --border-radius: 4px;
+}
+
+#top-header {
+    font-size: 4em;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f3f3f3;
+    ;
+}
+
+li {
+    float: left;
+}
+
+a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    /*color: white;*/
+}
+
+li a:hover {
+    background-color: #666;
+}
+
+a:active {
+    color: greenyellow;
+}
+
+
+/* Sign In/up page */
+
+* {
+    box-sizing: border-box
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+input[type=text],
+input[type=password],
+input[type=email] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+label {
+    color: cadetblue;
+}
+
+button {
+    background-color: #4bb544;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+.cancelButton {
+    
+    background-color: #cc3333;
+}
+
+.cancelButon,
+.signButton {
+    float: left;
+    width: 50%;
+}
+
+/*.container {
+    width: 400px;
+    max-width: 400px;
+    margin: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    background: #ffffff;
+}*/
+
+.title_form {
+    margin-bottom: 2rem;
+    text-align: center;
+    color: cadetblue;
+}
+
+.links {
+    display: inline;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 300px) {
+    .cancelbtn,
+    .signupbtn {
+        width: 50%;
+    }
+}
+
+.container1 {
+    float: left;
+}
+
+/* table for posts */
+
+.detail {
+    color: #252c6a;
+}
+
+/* noticeboard image */
+
+.noticeImage {
+    float: center;
+    
+}

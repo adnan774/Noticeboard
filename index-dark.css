@@ -1,0 +1,146 @@
+/* All display BODY text should be presented using a specific font. Ideally, we’d like this to be Arial or Helvetica, but any sans-serif font is acceptable as a backup */
+
+body {
+    font-family: "Arial", "Helvetica", sans-serif;
+    color: white;
+    background-color: #152737;
+}
+
+
+/* new CSS to change the colour of links on the site */
+
+a:link {
+    color: greenyellow;
+}
+
+
+/* visited link */
+
+a:visited {
+    color: palevioletred;
+}
+
+
+/* mouse over link */
+
+a:hover {
+    color: yellow;
+}
+
+
+/* selected link */
+
+a:active {
+    color: greenyellow;
+}
+
+
+/* create a new selector with the name top-header */
+
+#top-header {
+    font-size: 4em;
+}
+
+
+/* create a new selector with the name bottom-footer just as you did for the header */
+
+#bottom-footer {
+    border-style: ridge;
+    padding: 5px;
+}
+
+
+/* The font weight for h1, h2, and h3 tags should all be set to lighter and with a letter spacing of 1 pixel */
+
+h1,
+h2,
+h3 {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+/* Set the alignment of text in <p> tags to justified and the line height to 1.3 */
+
+p {
+    text-align: justify;
+    line-height: 1.3;
+}
+
+
+/* change the styling of the <hr> tags to make them look a bit more interesting and in-keeping with the aesthetic of the site */
+
+hr {
+    height: 7px;
+    border: 2px solid lightgrey;
+    border-radius: 2px;
+}
+
+
+/* create a new selector with the name table-main  */
+
+.table-main,
+.table-main th,
+.table-main td {
+    border: 1px solid lightgrey;
+}
+
+
+/* table header row only */
+
+.table-main th {
+    background-color: #273715;
+    color: white;
+    padding: 10px;
+}
+
+
+/* table cells only */
+
+.table-main td {
+    background-color: #371527;
+    padding: 5px;
+}
+
+
+/* table caption only */
+
+.table-main caption {
+    font-style: italic;
+    color: white;
+}
+
+
+/* create a new style with a background colour #615fa0 and font colour lightgrey */
+
+.customForm {
+    background-color: #251537;
+    color: white;
+    padding: 2px;
+}
+
+
+/* apply only to <input> and have a background colour of lightgrey and padding of 2 pixels */
+
+input.customField {
+    background-color: darkslategray;
+    padding: 2px;
+    color: white;
+}
+
+
+/* locate image near the bottom right of the browser window */
+
+#imageBR {
+    position: fixed;
+    bottom: 50%;
+    right: 75px;
+    border: 0px;
+}
+
+#menu {
+    padding: 8px;
+    border: lightgrey dashed 2px;
+    font-family: monospace;
+    font-size: large;
+}

@@ -1,0 +1,116 @@
+/* All display BODY text should be presented using a specific font. Ideally, we’d like this to be Arial or Helvetica, but any sans-serif font is acceptable as a backup */
+
+body {
+    font-family: "Arial", "Helvetica", sans-serif;
+    background-color: cadetblue;
+}
+
+
+/* create a new selector with the name top-header */
+
+#top-header {
+    font-size: 4em;
+}
+
+
+/* create a new selector with the name bottom-footer just as you did for the header */
+
+#bottom-footer {
+    border-style: ridge;
+    padding: 5px;
+}
+
+
+/* The font weight for h1, h2, and h3 tags should all be set to lighter and with a letter spacing of 1 pixel */
+
+h1,
+h2,
+h3 {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+/* Set the alignment of text in <p> tags to justified and the line height to 1.3 */
+
+p {
+    text-align: justify;
+    line-height: 1.3;
+}
+
+
+/* change the styling of the <hr> tags to make them look a bit more interesting and in-keeping with the aesthetic of the site */
+
+hr {
+    height: 7px;
+    border: 2px solid lightgrey;
+    border-radius: 2px;
+}
+
+
+/* create a new selector with the name table-main  */
+
+.table-main,
+.table-main th,
+.table-main td {
+    border: 1px solid lightgrey;
+}
+
+
+/* table header row only */
+
+.table-main th {
+    background-color: #a05f7e;
+    color: lightgrey;
+    padding: 10px;
+}
+
+
+/* table cells only */
+
+.table-main td {
+    background-color: #a0905f;
+    padding: 5px;
+}
+
+
+/* table caption only */
+
+.table-main caption {
+    font-style: italic;
+    color: white;
+}
+
+
+/* create a new style with a background colour #615fa0 and font colour lightgrey */
+
+.customForm {
+    background-color: #615fa0;
+    color: lightgrey;
+    padding: 2px;
+}
+
+
+/* apply only to <input> and have a background colour of lightgrey and padding of 2 pixels */
+
+input.customField {
+    background-color: lightgrey;
+    padding: 2px;
+}
+
+
+/* locate image near the bottom right of the browser window */
+
+#imageBR {
+    position: fixed;
+    bottom: 50%;
+    right: 75px;
+    border: 0px;
+}
+
+#menu {
+    padding: 8px;
+    border: lightgrey dashed 2px;
+    font-family: monospace;
+    font-size: large;
+}

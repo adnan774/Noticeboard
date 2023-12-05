@@ -1,0 +1,52 @@
+<?php
+session_start();
+// The main job of this script is to execute a SELECT statement to get users posts details
+
+
+// execute the header script
+require_once "header.php";
+// execute the credentials script
+require_once 'credentials.php';
+
+
+if (!isset($_SESSION['loggedIn']))
+{
+    // user isn't logged in, display a message saying they must be:
+    echo "You must be logged in to view this page.<br>";
+}
+else
+{
+    // user is already logged in, read their favourite films and display in a table:
+
+    // connect directly to our database (notice 4th argument):
+    $connection = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
+
+    // if the connection fails, we need to know, so allow this exit:
+    if (!$connection)
+    {
+        die("Connection failed: " . $mysqli_connect_error);
+    }
+
+    // find their user posts details
+    $query = "SELECT title, created, content, imageFROM users WHERE username = '{$_SESSION['username']}'";
+
+    // this query can return data ($result is an identifier):
+    $result = mysqli_query($connection, $query);
+    // how many rows came back?:    
+    $n = mysqli_num_rows($result);
+
+    $row = mysqli_fetch_assoc($result);
+    
+
+    // if we got some results then show them in a table:
+    if ($n > 0)
+    {
+        // just a bit of CSS to make the table clearly visible:
+    	
+
+echo <<<POSTS
+
+POSTS;
+    }
+}
+?>
